@@ -1,0 +1,74 @@
+
+.chatWindow{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 50vh;
+  width:50vw;
+  background-color:rgb(183, 183, 183);
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+  border: .25vh solid black;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: .5vh;
+  opacity: 0;
+  animation: fade-in-animation 1s forwards;
+}
+
+
+@keyframes fade-in-animation {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.messages {
+  padding: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chatWindow::-webkit-scrollbar {
+  width: 10px; /* set the width of the scrollbar */
+  border-width: 0;
+  background-color: #d6d6d6; /* set the color of the scrollbar track */
+  border-radius: .5vh;
+}
+
+.chatWindow::-webkit-scrollbar-thumb {
+  background-color:rgb(102, 102, 102);/* set the color of the scrollbar thumb */
+  border-radius: 5px; /* round the edges of the scrollbar thumb */
+  padding: .5px;
+}
+
+.bot {
+  width: 45%;
+  background-color: rgb(140, 182, 255);
+  margin: 0.5vh;
+  border-radius: 0.5vh;
+  padding: 0.5vh;
+  border-width: 0.05vh;
+  margin-right: auto; /* add this */
+}
+
+.user {
+  width: 25vh;
+  background-color: rgb(255, 253, 163);
+  margin: 0.5vh;
+  border-radius: 0.5vh;
+  padding: 0.5vh;
+  margin-left: auto; /* add this */
+  align-self: flex-end; /* add this */
+}
+
+
+.QuickReply{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:medium;
+  background-color:rgb(140, 182, 255);
+  border-radius: .5vh;
+  margin: .5vh;
+  border-width: .05vh;
+}

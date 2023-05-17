@@ -1,0 +1,54 @@
+.Employees {
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    margin: auto;
+    justify-content: center;
+}
+
+.emp {
+    width: 25vw;
+    padding: .5vh;
+    border-radius: .5vh;
+    background-color:rgb(140, 182, 255);
+    margin: .5vh;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation: fade-in-animation 1s forwards;
+}
+
+.name{
+    font-size: larger;
+    text-align: center;
+}
+
+.status{
+    font-size: medium;
+    text-align: center;
+    margin-left: auto;
+}
+
+.role{
+    font-size: medium;
+    text-align: center;
+}
+.email{
+    font-size: medium;
+    text-align: center;
+}
+
+.roleStatus{
+    display: flex;
+    flex-direction: row;
+}
+
+.about{
+    margin-top: 1vh;
+    border-width: .5vh;
+}
+
+@keyframes fade-in-animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
